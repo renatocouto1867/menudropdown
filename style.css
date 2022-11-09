@@ -1,0 +1,129 @@
+html {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+
+}
+
+
+h1 {
+    font-size: 30px;
+}
+
+form {
+    background-color: #FAF0E6;
+    border: 3px solid #DCDCDC;
+    margin: 20px auto;
+    width: 350px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+input {
+    width: 100px;
+}
+
+textarea {
+    width: 100px;
+}
+
+ul#contato {
+    list-style: none;
+
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #145c97;
+    color: #F8F8FF;
+    font-size: 20px;
+    box-shadow: 0 10px #062c49;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #008080;
+    color: #ece4e4;
+}
+
+button:active {
+    background-color: #6495ED;
+    box-shadow: 0 4px #363636;
+    border: 2px solid #000000;
+    transform: translateY(2px);
+}
+
+/*configuração menu Drop down*/
+#navegacao-principal {
+    position: relative;
+    font-family: monospace;
+    float: left;
+    width: 100%;
+}
+
+#menu-principal{
+    list-style: none;
+    padding-left: 0;
+}
+
+#menu-principal li {
+    background-color: rgb(2, 66, 2);
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+#menu-principal li a{
+    color: white;
+    text-decoration: none;
+}
+
+#menu-principal li ul{
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    box-shadow: 0px 8px 16px 0px black;
+}
+
+#menu-principal li ul{
+    margin: 0; 
+    padding: 0;
+    clear: both;
+    width: 100%;
+    
+}
+#menu-principal li:hover, #menu-principal li:focus-within{
+    background-color: #22a7a7fd;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#menu-principal a:hover{
+    color: black; /*cor da fonte quando passa o cursor*/
+}
+
+#menu-principal li:hover>ul,
+#menu-principal li:focus-within>ul,
+#menu-principal li ul:hover,
+#menu-principal li ul:focus{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+
+/*Fim configuração menu Drop down*/
