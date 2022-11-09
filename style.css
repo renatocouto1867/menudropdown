@@ -2,9 +2,7 @@ html {
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: antiquewhite;
-
 }
-
 
 h1 {
     font-size: 30px;
@@ -33,7 +31,6 @@ textarea {
 
 ul#contato {
     list-style: none;
-
 }
 
 button {
@@ -59,7 +56,9 @@ button:active {
     transform: translateY(2px);
 }
 
+
 /*configuração menu Drop down*/
+
 #navegacao-principal {
     position: relative;
     font-family: monospace;
@@ -67,7 +66,7 @@ button:active {
     width: 100%;
 }
 
-#menu-principal{
+#menu-principal {
     list-style: none;
     padding-left: 0;
 }
@@ -81,12 +80,13 @@ button:active {
     text-decoration: none;
     transition-duration: 0.5s;
 }
-#menu-principal li a{
+
+#menu-principal li a {
     color: white;
     text-decoration: none;
 }
 
-#menu-principal li ul{
+#menu-principal li ul {
     visibility: hidden;
     opacity: 0;
     min-width: 5rem;
@@ -98,28 +98,34 @@ button:active {
     box-shadow: 0px 8px 16px 0px black;
 }
 
-#menu-principal li ul{
-    margin: 0; 
+#menu-principal li ul {
+    margin: 10;
     padding: 0;
     clear: both;
     width: 100%;
-    
 }
-#menu-principal li:hover, #menu-principal li:focus-within{
+
+#menu-principal li ul li {
+    width: 91%;
+}
+
+#menu-principal li:hover,
+#menu-principal li:focus-within {
     background-color: #22a7a7fd;
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
 }
 
-#menu-principal a:hover{
-    color: black; /*cor da fonte quando passa o cursor*/
+#menu-principal a:hover {
+    color: black;
+    /*cor da fonte quando passa o cursor*/
 }
 
 #menu-principal li:hover>ul,
 #menu-principal li:focus-within>ul,
 #menu-principal li ul:hover,
-#menu-principal li ul:focus{
+#menu-principal li ul:focus {
     visibility: visible;
     opacity: 1;
     display: block;
